@@ -1,0 +1,5 @@
+Navbar:
+  - On shrink: 
+    - Resize logo -> On mobile it becomes a sentence [Done]
+    - Resize menu items [Done]
+    - Resize Search [Done]
