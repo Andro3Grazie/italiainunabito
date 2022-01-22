@@ -1,0 +1,193 @@
+footer .container-flex.main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--secondary);
+  color: var(--darkest);
+}
+footer .socials {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .socials .title {
+  opacity: 0.9;
+  font-style: oblique;
+}
+footer .socials a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .socials a .fa-square-o {
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+footer .socials a:hover .fa-square-o {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .society .description {
+  font-size: 0.75em;
+  color: var(--dark) !important;
+  padding-right: 1.3rem !important;
+}
+footer .society .description .quote {
+  font-style: italic;
+}
+
+footer .form-check {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+footer .terms {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+footer .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  border: 2px none var(--darkest);
+  border-bottom-style: solid;
+}
+footer .form-control:focus {
+  border-color: var(--darkest);
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+footer .form-check {
+  padding: 0;
+}
+.form-check-input[type='checkbox'] {
+  cursor: pointer;
+  float: none;
+  margin: 0;
+  vertical-align: 0pt;
+  border: 2px solid var(--darkest);
+  width: 1.1em;
+  height: 1.1em;
+}
+footer .form-check-input:checked {
+  background-color: var(--darkest);
+  border-color: var(--dark);
+}
+footer .form-check-input:focus {
+  border-color: var(--dark);
+  outline: 0;
+  box-shadow: none;
+}
+footer .form-check-label {
+  font-size: 0.75em;
+}
+
+footer .form-control.is-invalid,
+footer .was-validated .form-control:invalid {
+  border-color: rgb(255, 0, 0);
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: none;
+}
+
+footer .was-validated .form-control:invalid:focus {
+  border-color: rgb(255, 0, 0);
+  box-shadow: none;
+}
+footer .form-control.is-valid,
+footer .was-validated .form-control:valid {
+  border-color: var(--darkest);
+  background-image: none;
+}
+footer .form-control.is-valid:focus,
+footer .was-validated .form-control:valid:focus {
+  border-color: var(--darkest);
+  box-shadow: none;
+}
+footer button.submit {
+  border-color: var(--darkest);
+}
+
+footer button.submit:hover {
+  background-color: var(--darkest);
+}
+
+/* Copyright */
+footer .container-flex.copyright {
+  font-size: 0.8rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color: #868e96;
+  background-color: var(--darkest);
+
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+footer .container-md.items {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container-md.items a {
+  text-decoration: none;
+  color: #868e96;
+}
+footer .container-md.items a,
+footer .container-md.items i {
+  text-decoration: none;
+  color: #868e96;
+}
+footer .container-md.items a:hover,
+footer .container-md.items i:hover {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+}
+footer .socials .title.mobile {
+  display: none;
+}
+/* @media (max-width: 768px) { */
+@media (max-width: 576px) {
+  footer .society {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  footer .society .description .quote,
+  footer .socials .title {
+    display: none;
+  }
+  footer .form-check-input {
+    width: 0.9em !important;
+    height: 0.9em !important;
+  }
+  footer .form-check-label {
+    font-size: 12px;
+    align-items: center;
+  }
+  footer .society .description {
+    margin-top: 1.7em !important;
+  }
+  footer .socials .title.mobile {
+    display: block;
+    display: inherit;
+  }
+  footer .socials #twitter,
+  footer .socials #fb {
+    display: none;
+  }
+}
