@@ -21,7 +21,10 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/scrollUp.css" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/color.css" />
 
     <!-- Fontawesome -->
     <link
@@ -203,13 +206,150 @@
         </div>
       </div>
     </div>
+
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-dark btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Copyright -->
+    <footer>
+      <div class="container-flex main">
+        <div class="container-md mainElements">
+          <!-- Socials -->
+          <div class="socials">
+            <p class="m-0 p-0 title">
+              Tieniti in contatto con noi sui socials:
+            </p>
+            <p class="m-0 p-0 title mobile">Teniamoci in contatto:</p>
+            <p class="m-0 p-0">
+              <a class="me-4" href="https://www.instagram.com/italiainunabito/">
+                <span class="fa-stack">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </span>
+              </a>
+              <a class="me-4" href="https://www.youtube.com/c/ItaliainunAbito">
+                <span class="fa-stack">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x"></i>
+                </span>
+              </a>
+              <a class="me-4" href="" id="twitter">
+                <span class="fa-stack">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+              </a>
+              <a
+                class="me-4"
+                href="https://www.facebook.com/italiainunabito"
+                id="fb"
+              >
+                <span class="fa-stack">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </span>
+              </a>
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="row">
+            <div class="col society">
+              <!-- Content -->
+              <div class="mb-3">
+                <p class="m-0 p-0">Italia in un Abito</p>
+              </div>
+              <p class="m-0 p-0 description">
+                Il luogo d'incontro per discutere di eleganza, abbigliamento,
+                stile e storia del vestire classico.
+
+                <br /><br />
+                <span class="quote">
+                  <q
+                    >L'eleganza è quella qualità del comportamento che trasforma
+                    la massima qualità dell'essere in apparire.</q
+                  >
+                  <br />
+                  ~<cite class="ms-auto"> Jean Paul Sartre</cite>
+                </span>
+              </p>
+            </div>
+
+            <!-- Newsletter section -->
+            <div class="col newsletter">
+              <div class="mb-3">
+                <p class="m-0 p-0">Iscriviti per contenuti inediti</p>
+              </div>
+
+              <form class="needs-validation" autocomplete="off" novalidate>
+                <div class="mb-3">
+                  <input
+                    type="name"
+                    class="form-control"
+                    placeholder="Nome"
+                    id="username"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <div class="terms">
+                    <input
+                      type="checkbox"
+                      class="form-check-input me-2"
+                      required
+                    />
+                    <label class="form-check-label"
+                      >Accetto termini e condizioni</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-outline-dark">
+                    Iscriviti
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-flex copyright">
+        <div class="container-md items">
+          <p class="m-0 p-0 fw-normal">
+            Realizzato con <i class="fas fa-heart" title="amore"></i> da
+            <a
+              class="fw-bolder"
+              href="https://www.instagram.com/retry_tomorrow/"
+            >
+              Alessandro Mieli</a
+            >.
+          </p>
+          <p class="m-0 p-0 fw-bolder">&copy; Italia in un Abito</p>
+        </div>
+      </div>
+    </footer>
+
     <!-- Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
     <!-- Bootraps jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -228,6 +368,8 @@
     ></script>
 
     <!-- Custom JavaScript-->
-    <script src="trigger/navbar.js"></script>
+    <script src="/controller/trigger/navbar.js"></script>
+    <script src="/controller/trigger/scrollUp.js"></script>
+    <script src="/controller/trigger/footer.js"></script>
   </body>
 </html>

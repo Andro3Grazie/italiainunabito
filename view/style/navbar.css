@@ -1,7 +1,7 @@
 /* Navbar main container */
 nav.navbar {
   max-height: 100vh;
-  transition: max-height 0.6s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 nav.bg-light {
   background-color: #fff !important;
@@ -20,7 +20,7 @@ nav.navbar .container {
   max-height: 88px;
   object-fit: cover;
   object-position: 50% 50%;
-  transition: max-height 0.6s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 /* Menu container */
@@ -32,7 +32,7 @@ nav.navbar .container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  transition: transform 0.6s ease-out;
+  transition: transform 0.4s ease-out;
 }
 /* Search field */
 input[type='text'] {
@@ -93,28 +93,28 @@ input[type='text'] {
 /* links */
 .nav-link {
   font-size: 22.4px;
-  transition: font-size 0.6s ease-out;
+  transition: font-size 0.4s ease-out;
 }
 
 /* Shrink Navbar */
 nav.navbar.shrink {
   max-height: 70px;
-  transition: max-height 0.6s ease-in;
+  transition: max-height 0.4s ease-in;
 }
 /* Shrink Logo */
 nav.navbar.shrink .navbar-brand img {
   max-height: 50px;
-  transition: max-height 0.6s ease-in;
+  transition: max-height 0.4s ease-in;
 }
 /* Shrink links */
 nav.navbar.shrink .nav-link {
   font-size: 16px;
-  transition: font-size 0.6s ease-in;
+  transition: font-size 0.4s ease-in;
 }
 nav.navbar.shrink .search-container {
   transform: scale(0.7);
   transform-origin: right;
-  transition: transform 0.6s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
 /* Hamburger container */
@@ -162,7 +162,7 @@ nav.navbar.shrink .search-container {
   /* Logo */
   nav.navbar {
     height: 70px;
-    transition: height 0.6s ease-out;
+    transition: height 0.4s ease-out;
   }
   .navbar-brand img {
     display: none;
@@ -170,7 +170,7 @@ nav.navbar.shrink .search-container {
   /* Logo */
   nav.navbar.shrink {
     height: 55px;
-    transition: height 0.6s ease-in;
+    transition: height 0.4s ease-in;
   }
 }
 @media (min-width: 576px) {
@@ -212,7 +212,7 @@ nav.navbar.shrink .search-container {
     right: 0;
     bottom: 0;
     padding: 100px;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   .menu-container.active {
     opacity: 1;

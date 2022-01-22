@@ -3,3 +3,8 @@ Navbar:
     - Resize logo -> On mobile it becomes a sentence [Done]
     - Resize menu items [Done]
     - Resize Search [Done]
+    - Animation on Menu opening [Mobile] is too slow (increase a little bit Navbar animation speed too)
+
+
+- Return to the top button [Done] 
+- Footer [Done]
